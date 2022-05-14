@@ -23,7 +23,8 @@ Untuk bisa deliver aplikasi secara berkelanjutan, kita butuh sebuah proses autom
 - Pembuatan artifak/image, 
 - Unit testing, 
 - Functional testing, dan 
-- Deployment ke production. <br>
+- Deployment ke production. 
+<br>
 Jadi ketika terjadi perubahan kode, pipeline yang kita bangun akan otomatis melakukan 4 hal di atas.<br>
 
 Dalam suatu kasus jika kita ingin perubahan kode hanya berlaku ke beberapa user, maka kita bisa menerapkan **Canary Deployment**. Sehingga dengan menggunakan prinsip deployment ini, kita bisa roll-back ke versi sebelumnya jika terjadi sesuatu ataupun fitur terbaru pada aplikasi kita tidak memenuhi kepuasan para pengguna.

@@ -2,6 +2,11 @@
 
 ## Overview
 Ini adalah catatan hasil praktik lab di Qwiklabs, dalam lab ini saya mempraktikkan bagaimana cara membuat Continous Delivery Pipeline dengan Google Kubernetes Engine, Google Cloud Source Repositories, Google Cloud Container Builder, dan Spinnaker. Di lab ini menggunakan satu contoh aplikasi sederhana yang akan kita konfigurasikan aplikasi/service ini untuk dapat di-build, test, dan deploy secara otomatis. Ketika kita modifikasi kode pada aplikasi, diharapkan perubahan ini akan otomatis trigger CD pipeline yang telah dibuat untuk rebuild, retest, dan redeploy kode ke versi terbaru secara otomatis.
+<br>
+<br>
+**important**
+<br>
+Semua step yang dilakukan di catatan ini bertujuan untuk membantu kita memahami bagaimana cara membuat CD pipeline dengan Google Kubernetes Engine, Google Cloud Source Repositories, Google Cloud Container Builder, dan Spinnaker. Adapun jika ingin diterapkan di real world, maka mungkin diperlukan beberapa penyesuaian.
 
 ## Objektif
 - Memasang environment dengan Google Cloud Shell, membuat cluster K8s dari Google Cloud Shell, dan konfigurasi skema identity and user management.
@@ -18,7 +23,7 @@ Untuk bisa deliver aplikasi secara berkelanjutan, kita butuh sebuah proses autom
 - Pembuatan artifak/image, 
 - Unit testing, 
 - Functional testing, dan 
-- Deployment ke production.
+- Deployment ke production. <br>
 Jadi ketika terjadi perubahan kode, pipeline yang kita bangun akan otomatis melakukan 4 hal di atas.<br>
 
 Dalam suatu kasus jika kita ingin perubahan kode hanya berlaku ke beberapa user, maka kita bisa menerapkan **Canary Deployment**. Sehingga dengan menggunakan prinsip deployment ini, kita bisa roll-back ke versi sebelumnya jika terjadi sesuatu ataupun fitur terbaru pada aplikasi kita tidak memenuhi kepuasan para pengguna.

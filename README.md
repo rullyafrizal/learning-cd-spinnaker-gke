@@ -46,7 +46,7 @@ gcloud config set compute/zone {zone}
 gcloud container clusters create {nama-cluster} \
     --machine-type={type-machine}
 ```
-Pembuatan cluster biasa memakan waktu cukup lama, antara 5-10 menit
+Pembuatan cluster biasa memakan waktu cukup lama, antara 5-10 menit<br>
 3. Ketika selesai, output yang diharapkan adalah sebuah report/laporan yang berisi nama, lokasi, versi, IP Address, machine-type, node version, jumlah node, dan status cluster yang mengindikasikan bahwa cluster sedang berjalan
 
 ## Konfigurasi Identity and Access Management
@@ -328,7 +328,7 @@ sed s/PROJECT/$PROJECT/g spinnaker/pipeline-deploy.json > pipeline.json
 ./spin pipeline save --gate-endpoint http://localhost:8080/gate -f pipeline.json
 ```
 
-## Trigger dan Lihat Eksekusi Pipeline Secara Manual
+## Trigger dan Pantau Eksekusi Pipeline Secara Manual
 Konfigurasi yang telah kita buat menggunakan notifikasi push tag. Di bagian sebelumnya, kita telah push tag ke Cloud Soure Repositories yang itu telah men-trigger Cloud Build untuk men-build dan push image ke Container Registry. Nah untuk memverifikasi pipeline, kita bisa trigger secara manual.
 
 1. Navigate ke Spinnaker UI, caranya bisa dengan pilih Web Preview di Cloud Shell dan pilih `Preview on Port 8080`
